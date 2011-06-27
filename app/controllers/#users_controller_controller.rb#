@@ -1,0 +1,67 @@
+class UsersControllerController < ApplicationController
+
+
+  include ActiveMerchant::Billing::Integrations
+  require 'crypto42'
+  require 'money'
+
+
+
+#place order is for a specific job
+  def place_order
+
+    @job = Job.find(params[:job_id])
+    fetch_decrypted(@job)
+
+    if @logged_user.credits > 0
+      render(:action => "confirm_order")
+      return
+    else
+      #place order will have our paypal buttons
+      render(:action => "place_order")
+      return
+    end
+
+  rescue ActiveRecord::RecordNotFound
+    flash[:alert] = "Buying credits for fun?"
+    redirect_to :action => "profile"
+  end
+
+
+
+private
+  def fetch_decrypted(job = nil)
+
+    # cert_id is the certificate if we see in paypal when we upload our own certificates
+    # cmd _xclick need for buttons
+    # item name is what the user will see at the paypal page
+    # custom and invoice are passthrough vars which we will get back with the asunchronous
+    # notification
+    # no_note and no_shipping means the client want see these extra fields on the paypal payment
+    # page
+    # return is the url the user will be redirected to by paypal when the transaction is completed.
+    decrypted = {
+      "cert_id" => "HBALH6UNXEKN2",
+      "cmd" => "_xclick",
+      "business" => "andy-r2-test@r2-dvd.org",
+      "item_name" => "FWJ - 1 Credit",
+      "item_number" => "1",
+      "custom" =>"something to pass to IPN",
+      "amount" => "75",
+      "currency_code" => "USD",
+      "country" => "US",
+      "no_note" => "1",
+      "no_shipping" => "1",
+    }
+
+    if job
+      decrypted.merge!("invoice" => "Another passthrough var", "return" => "http://www.freshwebjobs.com/users/done?job_id=#{job.id}")
+    else
+      decrypted.merge!("return" => "http://www.freshwebjobs.com/users/done")
+    end
+
+    @encrypted_basic = Crypto42::Button.from_hash(decrypted).get_encrypted_text
+
+
+     @action_url = ENV['RAILS_ENV'] == "production" ? "https://www.paypal.com/uk/cgi-bin/webscr" : "https://www.sandbox.paypal.com/uk/cgi-bin/webscr"
+end

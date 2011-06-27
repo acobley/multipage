@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Venues</title>
+  <%= stylesheet_link_tag "http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css"%>
+
+  <%= stylesheet_link_tag :all %>
+  <%= stylesheet_link_tag "main" %>
+
+  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag "build/yui/yui-min.js" %>
+  <%= javascript_include_tag "application_main" %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+<<%= link_to "Home", home_path %>>
+<<%= link_to "Users", users_path %>>
+<<%= link_to "Venues", venues_path %>>
+<<%= link_to "Articles", articles_path %>>
+
+<%= yield %>
+<!-- HITSNIFFER TRACKING CODE - Manual 2011-06-01 - DO NOT CHANGE -->
+<script>aid=6813;sid=7007;</script>
+<script type="text/javascript">(function(){var hstc=document.createElement('script');var hstcs='www.';if (document.location.protocol=='https:') hstcs='';hstc.src=document.location.protocol+'//'+hstcs+'hitsniffer.com/track.js';hstc.async=true;var htssc = document.getElementsByTagName('script')[0];htssc.parentNode.insertBefore(hstc, htssc);})();
+</script><noscript><a href="http://www.hitsniffer.com/"><img src="http://www.hitsniffer.com/track.php?mode=img&code=9b8730de356c35426c2798a43fe2124b" alt="blog tracking" />blog statistics</a></noscript>
+<!-- HITSNIFFER TRACKING CODE - DO NOT CHANGE -->
+
+</body>
+</html>

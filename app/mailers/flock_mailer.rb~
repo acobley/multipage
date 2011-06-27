@@ -1,0 +1,11 @@
+class FlockMailer < ActionMailer::Base
+  default :from => "andy@r2-dvd.org"
+
+def mail(recipient)     
+@from "andy@r2-dvd.org"     
+@recipients recipient     
+@subject "Hi #{recipient}"     
+@body(:recipient => recipient)   
+end
+
+end
