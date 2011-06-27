@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  tid: MyString
+  user: 
+  state: MyString
+
+two:
+  tid: MyString
+  user: 
+  state: MyString

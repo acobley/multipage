@@ -1,0 +1,192 @@
+.ddmx34{
+border:0px none  !important ; 
+}
+.ddmx34 a.item1,
+.ddmx34 a.item1:hover,
+.ddmx34 a.item1-active,
+.ddmx34 a.item1-active:hover {
+ padding: 7px 0px 0px 0px  !important ; 
+ top: 0px !important ; 
+ left: 0px; 
+ font-size: 14px !important ; 
+ font-family: Arial, Helvetica, sans-serif !important ; 
+ text-align: center !important ; 
+ font-weight: bold !important ; 
+ color: #5e596e !important ; 
+ text-decoration: none !important ; 
+ display: block; 
+ white-space: nowrap; 
+ position: relative; 
+ width:105px; 
+ height:23px; 
+ background-color: #dfdee1 !important ; 
+}
+.ddmx34 td.item11 {
+ background-color: #dfdee1 !important ; 
+ padding:0 !important ; 
+ border-top: 0px none  !important ; 
+ border-left: 0px none  !important ; 
+ border-bottom: 0px none ;
+ border-right: 0 !important ; 
+ white-space: nowrap !important ; 
+ width:105px; 
+ height:23px; 
+}
+.ddmx34 td.item11-last {
+ background-color: #dfdee1 !important ; 
+ padding:0 !important ; 
+ border: 0px none  !important ; 
+ white-space: nowrap; 
+ width:105px; 
+ height:23px; 
+}
+.ddmx34 td.item11-acton {
+ padding:0 !important ; 
+ border-top: 0px none  !important ; 
+ border-left: 0px none  !important ; 
+ white-space: nowrap; 
+ border-bottom: 0px none ;
+}
+.ddmx34 td.item11-acton-last:hover,
+.ddmx34 td.item11-acton-last {
+ border: 0px none  !important ; 
+}
+.ddmx34 .item11:hover,
+.ddmx34 .item11-acton:hover,
+.ddmx34 .item11-last:hover,
+.ddmx34 .item11-acton-last a.item1,
+.ddmx34 .item11-acton a.item1,
+.ddmx34 .item11-acton-last a:hover,
+.ddmx34 .item11-acton a:hover,
+.ddmx34 .item11 a:hover,
+.ddmx34 .item11-last a:hover,
+.ddmx34 a.item1-active,
+.ddmx34 a.item1-active:hover {
+background-image: URL("http://www.flockedu.com//modules/mod_swmenupro/images/button_active.jpg") ;
+ color: #FFFFFF !important ; 
+}
+.ddmx34 a.item2,
+.ddmx34 a.item2:hover,
+.ddmx34 a.item2-active,
+.ddmx34 a.item2-active:hover {
+ padding: 5px 5px 5px 5px !important ; 
+ font-size: 14px !important ; 
+ font-family: Arial, Helvetica, sans-serif !important ; 
+ text-align: left !important ; 
+ font-weight: bold !important ; 
+ text-decoration: none !important ; 
+ display: block; 
+ white-space: nowrap; 
+ opacity:0.85; 
+}
+.ddmx34 a.item2 {
+ border-top: 0px none  !important ; 
+ border-left: 0px none  !important ; 
+ border-right: 0px none  !important ; 
+}
+.ddmx34 a.item2-last {
+ border-bottom: 0px none  !important ; 
+ z-index:500; 
+}
+.ddmx34 a.item2:hover,
+.ddmx34 a.item2-active,
+.ddmx34 a.item2-active:hover {
+ border-top: 0px none  !important ; 
+ border-left: 0px none  !important ; 
+ border-right: 0px none  !important ; 
+}
+.ddmx34 .section {
+ border: 0px none  !important ; 
+ position: absolute; 
+ visibility: hidden; 
+ display: block; 
+ z-index: -1; 
+}
+.ddmx34 .subsection a{
+ width:105px; 
+ white-space:normal !important; 
+}
+.ddmx34frame {
+ border: 0px none  !important ; 
+}
+.ddmx34 .item11-acton-last .item1 img.seq2,
+.ddmx34 .item11-acton .item1 img.seq2,
+.ddmx34 img.seq1
+{
+ display:    inline; 
+}
+.ddmx34 a.item1:hover img.seq2,
+.ddmx34 a.item1-active img.seq2,
+.ddmx34 a.item1-active:hover img.seq2,
+.ddmx34 a.item2:hover img.seq2,
+.ddmx34 a.item2-active img.seq2,
+.ddmx34 a.item2-active:hover img.seq2
+{
+ display:    inline; 
+}
+.ddmx34 img.seq2,
+.ddmx34 .item11-acton-last .item1 img.seq1,
+.ddmx34 .item11-acton .item1 img.seq1,
+.ddmx34 a.item2:hover img.seq1,
+.ddmx34 a.item2-active img.seq1,
+.ddmx34 a.item2-active:hover img.seq1,
+.ddmx34 a.item1:hover img.seq1,
+.ddmx34 a.item1-active img.seq1,
+.ddmx34 a.item1-active:hover img.seq1
+{
+ display:   none; 
+}
+* html .ddmx34 td { position: relative; } /* ie 5.0 fix */
+.ddmx34 #menu34-0 {
+border-right: 4px solid #ffffff !important;
+
+ 
+}
+.ddmx34 td.item11-acton-last #menu34-0,
+.ddmx34 td.item11-acton #menu34-0,
+.ddmx34 a.item1-active#menu34-0,
+.ddmx34 #menu34-0:hover {
+border-right: 4px solid #ffffff !important;
+
+ 
+}
+.ddmx34 #menu34-1 {
+border-right: 4px solid #ffffff !important;
+
+ 
+}
+.ddmx34 td.item11-acton-last #menu34-1,
+.ddmx34 td.item11-acton #menu34-1,
+.ddmx34 a.item1-active#menu34-1,
+.ddmx34 #menu34-1:hover {
+border-right: 4px solid #ffffff !important;
+
+ 
+}
+.ddmx34 #menu34-2 {
+border-right: 4px solid #ffffff !important;
+
+ 
+}
+.ddmx34 td.item11-acton-last #menu34-2,
+.ddmx34 td.item11-acton #menu34-2,
+.ddmx34 a.item1-active#menu34-2,
+.ddmx34 #menu34-2:hover {
+border-right: 4px solid #ffffff !important;
+
+ 
+}
+.ddmx34 #menu34-3 {
+border-right: 4px solid #ffffff !important;
+
+ 
+}
+.ddmx34 td.item11-acton-last #menu34-3,
+.ddmx34 td.item11-acton #menu34-3,
+.ddmx34 a.item1-active#menu34-3,
+.ddmx34 #menu34-3:hover {
+border-right: 4px solid #ffffff !important;
+
+ 
+}
+ 
