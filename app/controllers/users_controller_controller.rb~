@@ -41,9 +41,9 @@ private
     # page
     # return is the url the user will be redirected to by paypal when the transaction is completed.
     decrypted = {
-      "cert_id" => "cert id from your paypal business account",
+      "cert_id" => "HBALH6UNXEKN2",
       "cmd" => "_xclick",
-      "business" => "name@yourpaypal.com",
+      "business" => "andy-r2-test@r2-dvd.org",
       "item_name" => "FWJ - 1 Credit",
       "item_number" => "1",
       "custom" =>"something to pass to IPN",
@@ -61,7 +61,9 @@ private
     end
 
     @encrypted_basic = Crypto42::Button.from_hash(decrypted).get_encrypted_text
+=begin
+    @action_url = ENV['RAILS_ENV'] == "production" ? "https://www.paypal.com/uk/cgi-bin/webscr" : "https://www.sandbox.paypal.com/uk/cgi-bin/webscr"
+=end
+    @action_url = "https://www.sandbox.paypal.com/uk/cgi-bin/webscr"
 
-
-     @action_url = ENV['RAILS_ENV'] == "production" ? "https://www.paypal.com/uk/cgi-bin/webscr" : "https://www.sandbox.paypal.com/uk/cgi-bin/webscr"
 end

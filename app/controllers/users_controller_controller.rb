@@ -2,7 +2,7 @@ class UsersControllerController < ApplicationController
 
 
   include ActiveMerchant::Billing::Integrations
-  require 'crypto42'
+  require 'crypto64'
   require 'money'
 
 
@@ -61,7 +61,10 @@ private
     end
 
     @encrypted_basic = Crypto42::Button.from_hash(decrypted).get_encrypted_text
+=begin
+    @action_url = ENV['RAILS_ENV'] == "production" ? "https://www.paypal.com/uk/cgi-bin/webscr" : "https://www.sandbox.paypal.com/uk/cgi-bin/webscr"
+=end
+    @action_url = "https://www.sandbox.paypal.com/uk/cgi-bin/webscr"
 
-
-     @action_url = ENV['RAILS_ENV'] == "production" ? "https://www.paypal.com/uk/cgi-bin/webscr" : "https://www.sandbox.paypal.com/uk/cgi-bin/webscr"
 end
+end 

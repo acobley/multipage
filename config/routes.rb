@@ -1,4 +1,6 @@
 Multipage::Application.routes.draw do
+  resources :ratings
+
   resources :admins
 
   resources :events do
