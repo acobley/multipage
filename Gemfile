@@ -31,7 +31,7 @@ gem 'capistrano'
 # and rake tasks are available in development mode:
 group :development, :test do
    gem 'sqlite3'
-   gem 'webrat'
+#   gem 'webrat'
 end
 
 group :production, :test do
