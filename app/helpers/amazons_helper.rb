@@ -1,0 +1,2 @@
+module AmazonsHelper
+end

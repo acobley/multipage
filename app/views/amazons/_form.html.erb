@@ -1,0 +1,21 @@
+<%= form_for(@amazon) do |f| %>
+  <% if @amazon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@amazon.errors.count, "error") %> prohibited this amazon from being saved:</h2>
+
+      <ul>
+      <% @amazon.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Apid %><br />
+    <%= f.text_field :Apid %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

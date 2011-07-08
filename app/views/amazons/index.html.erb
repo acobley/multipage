@@ -1,0 +1,27 @@
+<h1>Listing amazons</h1>
+
+<table>
+  <tr>
+    <th>Apid</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @amazons.each do |amazon| %>
+  <tr>
+    <td>
+<iframe src="http://rcm-uk.amazon.co.uk/e/cm?t=adveninwebpro-21&o=2&p=8&l=as1&asins=<%= amazon.Apid %>&ref=tf_til&fc1=000000&IS2=1&lt1=_blank&m=amazon&lc1=0000FF&bc1=000000&bg1=FFFFFF&f=ifr" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+
+
+<%= amazon.Apid %></td>
+    <td><%= link_to 'Show', amazon %></td>
+    <td><%= link_to 'Edit', edit_amazon_path(amazon) %></td>
+    <td><%= link_to 'Destroy', amazon, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Amazon', new_amazon_path %>

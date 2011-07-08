@@ -1,4 +1,6 @@
 Multipage::Application.routes.draw do
+  resources :amazons
+
   resources :ratings
 
   resources :admins
